@@ -1,4 +1,4 @@
-
+//ARQUIVO DE ESPECIFICACAO
 typedef struct ploat_vector FloatVector;
 
 FloatVector *create(int tam);
@@ -9,3 +9,8 @@ float at(const FloatVector *vector, int pos);
 float get(const FloatVector *vector);
 void append(FloatVector *vector, float n);
 void print(const FloatVector *vector);
+
+//-------------------PODERIA EXISTIR-----------
+// bool compare (floatVector*. FloatVector*);
+// void split (floatVector*, FloatVector*);
+// void join(FloatVector*, FloatVector*);
