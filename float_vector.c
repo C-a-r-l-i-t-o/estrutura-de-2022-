@@ -30,3 +30,9 @@ void destroy(FloatVector **vet_ref){
     free(vet);
     *vet_ref = NULL;
 }
+int size(const FloatVector *vector){
+    return vector->size;
+}
+int capacity(const FloatVector *vector){
+    return vector->capacity;
+}
