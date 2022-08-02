@@ -1,6 +1,7 @@
 #include "float_vector.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 struct float_vector {
     int capacidade; //numero max de elementos
@@ -44,3 +45,18 @@ float at(const FloatVector *vector, int pos){
     }    
     return vector->data[pos];
 }
+float get(const FloatVector *vector, int index){
+    return vector->data[index];    
+}
+bool infull(const FloatVector *vector){
+    return vector-> == vector->capacity;
+}
+void append(FloatVector *vector, float n){
+    if(_isfull(vector))
+    {
+        //error
+        fprintf(stderr, "Error n append\nVector is full!");
+        exit(EXIT_FAILURE);
+    }
+        vector->data[vector->size++] = n;
+}    
