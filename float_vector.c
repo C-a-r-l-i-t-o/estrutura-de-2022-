@@ -36,3 +36,11 @@ int size(const FloatVector *vector){
 int capacity(const FloatVector *vector){
     return vector->capacity;
 }
+float at(const FloatVector *vector, int pos){
+    if(pos < 0|| pos => vector->size){
+    fprintf(stderr, "Erro: Invalid position!\n");
+        fprintf(stderr, "Index [%d] is out bouds\n");
+        exit(EXIT_FAILURE);
+    }    
+    return vector->data[pos];
+}
