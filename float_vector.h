@@ -1,5 +1,5 @@
 //ARQUIVO DE ESPECIFICACAO
-typedef struct ploat_vector FloatVector;
+typedef struct float_vector FloatVector;
 
 FloatVector *create(int tam);
 void destroy (FloatVector **ref_vector );
